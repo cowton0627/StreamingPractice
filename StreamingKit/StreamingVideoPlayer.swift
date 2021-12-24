@@ -11,7 +11,12 @@ import AVKit
 
 public class StreamingVideoPlayer {
     private let playerViewController = AVPlayerViewController()
-    private let avPlayer = AVPlayer()
+    public let avPlayer = AVPlayer()
+    // 檢查是否正在播放, 方法二
+    public var isPlaying: Bool? {
+        return avPlayer.timeControlStatus == AVPlayer.TimeControlStatus.playing
+
+    }
     
     private lazy var playerView: UIView = {
         guard let view = playerViewController.view else {
@@ -46,3 +51,12 @@ public class StreamingVideoPlayer {
     }
     
 }
+
+// 檢查是否正在播放, 方法一
+extension AVPlayer {
+    public var isPlaying: Bool {
+        return rate != 0 && error == nil
+    }
+}
+
+//player.timeControlStatus == AVPlayer.TimeControlStatus.playing
