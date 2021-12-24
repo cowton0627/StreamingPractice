@@ -13,7 +13,37 @@
 		916BCAC4277335E0003373B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 916BCAC2277335E0003373B9 /* Main.storyboard */; };
 		916BCAC6277335E6003373B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 916BCAC5277335E6003373B9 /* Assets.xcassets */; };
 		916BCAC9277335E6003373B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 916BCAC7277335E6003373B9 /* LaunchScreen.storyboard */; };
+		916BCAD427733680003373B9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 916BCAD627733680003373B9 /* Localizable.strings */; };
+		916BCAE3277337FB003373B9 /* StreamingKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 916BCAE2277337FB003373B9 /* StreamingKit.docc */; };
+		916BCAE4277337FB003373B9 /* StreamingKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 916BCAE1277337FA003373B9 /* StreamingKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		916BCAE7277337FB003373B9 /* StreamingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916BCADF277337FA003373B9 /* StreamingKit.framework */; };
+		916BCAE8277337FB003373B9 /* StreamingKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 916BCADF277337FA003373B9 /* StreamingKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		916BCAEE2773381C003373B9 /* StreamingVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916BCAED2773381B003373B9 /* StreamingVideoPlayer.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		916BCAE5277337FB003373B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 916BCAB1277335E0003373B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 916BCADE277337FA003373B9;
+			remoteInfo = StreamingKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		916BCAEC277337FB003373B9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				916BCAE8277337FB003373B9 /* StreamingKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		916BCAB9277335E0003373B9 /* StreamingPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamingPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +54,25 @@
 		916BCAC5277335E6003373B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		916BCAC8277335E6003373B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		916BCACA277335E6003373B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		916BCAD1277335FF003373B9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		916BCAD527733680003373B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		916BCAD727733685003373B9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		916BCADF277337FA003373B9 /* StreamingKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StreamingKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		916BCAE1277337FA003373B9 /* StreamingKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StreamingKit.h; sourceTree = "<group>"; };
+		916BCAE2277337FB003373B9 /* StreamingKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = StreamingKit.docc; sourceTree = "<group>"; };
+		916BCAED2773381B003373B9 /* StreamingVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingVideoPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		916BCAB6277335E0003373B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916BCAE7277337FB003373B9 /* StreamingKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		916BCADC277337FA003373B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				916BCABB277335E0003373B9 /* StreamingPractice */,
+				916BCAE0277337FA003373B9 /* StreamingKit */,
 				916BCABA277335E0003373B9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				916BCAB9277335E0003373B9 /* StreamingPractice.app */,
+				916BCADF277337FA003373B9 /* StreamingKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,11 +110,33 @@
 				916BCAC5277335E6003373B9 /* Assets.xcassets */,
 				916BCAC7277335E6003373B9 /* LaunchScreen.storyboard */,
 				916BCACA277335E6003373B9 /* Info.plist */,
+				916BCAD627733680003373B9 /* Localizable.strings */,
 			);
 			path = StreamingPractice;
 			sourceTree = "<group>";
 		};
+		916BCAE0277337FA003373B9 /* StreamingKit */ = {
+			isa = PBXGroup;
+			children = (
+				916BCAE1277337FA003373B9 /* StreamingKit.h */,
+				916BCAED2773381B003373B9 /* StreamingVideoPlayer.swift */,
+				916BCAE2277337FB003373B9 /* StreamingKit.docc */,
+			);
+			path = StreamingKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		916BCADA277337FA003373B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916BCAE4277337FB003373B9 /* StreamingKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		916BCAB8277335E0003373B9 /* StreamingPractice */ = {
@@ -77,15 +146,35 @@
 				916BCAB5277335E0003373B9 /* Sources */,
 				916BCAB6277335E0003373B9 /* Frameworks */,
 				916BCAB7277335E0003373B9 /* Resources */,
+				916BCAEC277337FB003373B9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				916BCAE6277337FB003373B9 /* PBXTargetDependency */,
 			);
 			name = StreamingPractice;
 			productName = StreamingPractice;
 			productReference = 916BCAB9277335E0003373B9 /* StreamingPractice.app */;
 			productType = "com.apple.product-type.application";
+		};
+		916BCADE277337FA003373B9 /* StreamingKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 916BCAE9277337FB003373B9 /* Build configuration list for PBXNativeTarget "StreamingKit" */;
+			buildPhases = (
+				916BCADA277337FA003373B9 /* Headers */,
+				916BCADB277337FA003373B9 /* Sources */,
+				916BCADC277337FA003373B9 /* Frameworks */,
+				916BCADD277337FA003373B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StreamingKit;
+			productName = StreamingKit;
+			productReference = 916BCADF277337FA003373B9 /* StreamingKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +189,9 @@
 					916BCAB8277335E0003373B9 = {
 						CreatedOnToolsVersion = 13.0;
 					};
+					916BCADE277337FA003373B9 = {
+						CreatedOnToolsVersion = 13.0;
+					};
 				};
 			};
 			buildConfigurationList = 916BCAB4277335E0003373B9 /* Build configuration list for PBXProject "StreamingPractice" */;
@@ -109,6 +201,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 916BCAB0277335E0003373B9;
 			productRefGroup = 916BCABA277335E0003373B9 /* Products */;
@@ -116,6 +209,7 @@
 			projectRoot = "";
 			targets = (
 				916BCAB8277335E0003373B9 /* StreamingPractice */,
+				916BCADE277337FA003373B9 /* StreamingKit */,
 			);
 		};
 /* End PBXProject section */
@@ -126,8 +220,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				916BCAC9277335E6003373B9 /* LaunchScreen.storyboard in Resources */,
+				916BCAD427733680003373B9 /* Localizable.strings in Resources */,
 				916BCAC6277335E6003373B9 /* Assets.xcassets in Resources */,
 				916BCAC4277335E0003373B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		916BCADD277337FA003373B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +246,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		916BCADB277337FA003373B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916BCAEE2773381C003373B9 /* StreamingVideoPlayer.swift in Sources */,
+				916BCAE3277337FB003373B9 /* StreamingKit.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		916BCAE6277337FB003373B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 916BCADE277337FA003373B9 /* StreamingKit */;
+			targetProxy = 916BCAE5277337FB003373B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		916BCAC2277335E0003373B9 /* Main.storyboard */ = {
@@ -159,8 +278,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				916BCAC8277335E6003373B9 /* Base */,
+				916BCAD1277335FF003373B9 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		916BCAD627733680003373B9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				916BCAD527733680003373B9 /* en */,
+				916BCAD727733685003373B9 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -170,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -231,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -285,6 +416,7 @@
 		916BCACE277335E6003373B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -313,6 +445,7 @@
 		916BCACF277335E6003373B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -338,6 +471,66 @@
 			};
 			name = Release;
 		};
+		916BCAEA277337FB003373B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VWDLUM96X8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = individualStudio.StreamingKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		916BCAEB277337FB003373B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VWDLUM96X8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = individualStudio.StreamingKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -355,6 +548,15 @@
 			buildConfigurations = (
 				916BCACE277335E6003373B9 /* Debug */,
 				916BCACF277335E6003373B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		916BCAE9277337FB003373B9 /* Build configuration list for PBXNativeTarget "StreamingKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916BCAEA277337FB003373B9 /* Debug */,
+				916BCAEB277337FB003373B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
