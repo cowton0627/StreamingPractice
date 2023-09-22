@@ -102,6 +102,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="playBtn" destination="eBd-QO-ktU" id="XRq-Is-cnP"/>
                         <outlet property="urlTextField" destination="wL6-iG-NQf" id="8Bi-rm-7SR"/>
                         <outlet property="videoView" destination="cJR-Ea-l8r" id="rkb-XW-g0G"/>
                     </connections>

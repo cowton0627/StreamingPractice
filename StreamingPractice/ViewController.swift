@@ -23,7 +23,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var urlTextField: UITextField!
     @IBOutlet weak var videoView: UIView!
-
+    @IBOutlet weak var playBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        myLabel.text = NSLocalizedString("TestString", comment: "你好嗎？")
@@ -53,17 +54,20 @@ class ViewController: UIViewController {
         
         if videoPlayer.isPlaying == false {
             videoPlayer.play(url: url)
+            playBtn.isEnabled = false  // 禁用播放按鈕
         }
         
     }
     
     @IBAction func pauseBtnTapped() {
         videoPlayer.pause()
+        playBtn.isEnabled = true  // 啟用播放按鈕
     }
     
     @IBAction func clearBtnTapped() {
         urlTextField.text = nil
         videoPlayer.pause()
+        playBtn.isEnabled = true  // 啟用播放按鈕
     }
 
 

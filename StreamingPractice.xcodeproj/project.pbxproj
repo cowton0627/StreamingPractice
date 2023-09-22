@@ -108,9 +108,9 @@
 				916BCAC0277335E0003373B9 /* ViewController.swift */,
 				916BCAC2277335E0003373B9 /* Main.storyboard */,
 				916BCAC5277335E6003373B9 /* Assets.xcassets */,
+				916BCAD627733680003373B9 /* Localizable.strings */,
 				916BCAC7277335E6003373B9 /* LaunchScreen.storyboard */,
 				916BCACA277335E6003373B9 /* Info.plist */,
-				916BCAD627733680003373B9 /* Localizable.strings */,
 			);
 			path = StreamingPractice;
 			sourceTree = "<group>";
